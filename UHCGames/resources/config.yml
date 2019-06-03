@@ -1,0 +1,189 @@
+---
+#Used for server transfers back to the hub
+server-ip: "play.adrenaline.today"
+server-port: 19132
+
+# ----- GAME CONFIGURATION ----- #
+#The order this goes in is item constant, meta, max amount.
+#This MUST be specified completely
+items:
+  - "BOW:0:1"
+  - "ARROW:0:16"
+  - "STONE:0:32"
+  - "WOODEN_PLANKS:0:32"
+  - "BUCKET:10:1" #LAVA
+  - "BUCKET:8:1" #WATER
+  - "DIAMOND:0:5"
+  - "APPLE:0:16"
+  - "DIAMOND_HELMET"
+  - "DIAMOND_BOOTS"
+  - "ENDER_PEARL:0:2"
+  #- "BOTTLE_O_ENCHANTING:0:16" TODO: Add when enchanting comes back.
+  #- "DYE:4:64"
+  - "GOLDEN_APPLE:0:4"
+  - "STEAK:0:16"
+  - "CARROT:0:32"
+  - "CAKE:0:1"
+  - "GOLD_INGOT:0:16"
+  - "SNOWBALL:0:5"
+  - "FLINT_AND_STEEL:0:1"
+  - "COBWEB:0:3"
+
+#This is the blocks that can be placed during the game.
+placeable-blocks:
+  - "WOODEN_PLANKS"
+  - "STONE"
+  - "CRAFTING_TABLE"
+  - "CAKE_BLOCK"
+  - "COBWEB"
+
+#The list of placeable blocks is automatically able to be broken, since you can place them.
+breakable-blocks:
+  - "LEAVES"
+  - "LEAVES2"
+
+# ----- MAP CONFIGURATION ----- #
+#Each map has their own configuration. Breeze is the example map of what it should look like.
+#Adding a map is using the folder name of the world and in order to see these results, edit server.properties level-name to the world you will use.
+Breeze Island:
+  #Used for meetup borders
+  border: 40
+  #When grabbing each spawnpoint, make sure to ignore the decimal points.
+  #The decimal points will be replaced with a .5 at the end of the x and z coordinate, otherwise you won't spawn in the middle of the block.
+  spawnpoints: [
+  [98.5, 69, -34.5],
+  [78.5, 64, 13.5],
+  [76.5, 64, 60.5],
+  [29.5, 64, 83.5],
+  [26.5, 92, 163.5],
+  [3.5, 110, 65.5],
+  [159.5, 70, 126.5],
+  [-55.5, 64, 26.5],
+  [-116.5, 75, 25.5],
+  [-122.5, 63, 57.5],
+  [-27.5, 88, -3.5],
+  [8.5, 98, -17.5]
+  ]
+  #The 4 spawn points for meetups.
+  meetup-spawns: [
+  [15.5, 66, 49.5],
+  [40.5, 66, 24.5],
+  [15.5, 66, -0.5],
+  [-9.5, 66, 24.5]
+  ]
+
+Zone85:
+  border: 30
+  spawnpoints: [
+  [31.5, 58, -131.5],
+  [21.5, 58, -99.5],
+  [-95.5, 59, -144.5],
+  [-143.5, 58, -121.5],
+  [-38.5, 58, 161.5],
+  [-152.5, 58, -20.5],
+  [121.5, 67, -92.5],
+  [135.5, 63, 64.5],
+  [109.5, 64, 28.5],
+  [12.5, 67, 112.5],
+  [84.5, 70, -35.5],
+  [-125.5, 62, -41.5]
+  ]
+  meetup-spawns: [
+  [-0.5, 57, 24.5],
+  [20.5, 57, 3.5],
+  [-0.5, 57, -17.5],
+  [-21.5, 57, 3.5]
+  ]
+
+SolarFrost:
+  border: 30
+  spawnpoints: [
+  [-409.5, 9, -1390.5],
+  [-333.5, 16, -1370.5],
+  [-441.5, 21, -1335.5],
+  [-422.5, 27, -1356.5],
+  [-375.5, 11, -1259.5],
+  [-361.5, 25, -1350.5],
+  [-315.5, 9, -1318.5],
+  [-333.5, 16, -1370.5],
+  [-367.5, 9, -1281.5],
+  [-361.5, 25, -1315.5],
+  [-408.5, 8, -1274.5],
+  [-463.5, 11, -1243.5]
+  ]
+  meetup-spawns: [
+  [-425.5, 6, -1327.5],
+  [-398.5, 6, -1300.5],
+  [-371.5, 6, -1327.5],
+  [-398.5, 6, -1354.5]
+  ]
+
+SG4:
+  border: 30
+  spawnpoints: [
+  [14.5, 47, -75.5],
+  [41.5, 57, 49.5],
+  [136.5, 37, -9.5],
+  [90.5, 37, -139.5],
+  [-6.5, 37, -153.5],
+  [-41.5, 37, -170.5],
+  [-108.5, 36, -68.5],
+  [-174.5, 36, -57.5],
+  [123.5, 36, 137.5],
+  [121.5, 37, 32.5],
+  [-71.5, 37, 29.5],
+  [-141.5, 34, 120.5]
+  ]
+  meetup-spawns: [
+  [0.5, 31, 14.5],
+  [17.5, 31, -3.5],
+  [0.5, 31, -20.5],
+  [-17.5, 31, -3.5]
+  ]
+
+Valleyside University:
+  border: 20
+  spawnpoints: [
+  [132.5, 7, 7.5],
+  [218.5, 15, -49.5],
+  [404.5, 15, -49.5],
+  [41.5, 7, 8.5],
+  [498.5, 8, 99.5],
+  [301.5, 9, 311.5],
+  [112.5, 7, 114.5],
+  [481.5, 7, 8.5],
+  [136.5, 8, 237.5],
+  [390.5, 8, 202.5],
+  [290.5, 8, 249.5],
+  [492.5, 14, 238.5]
+  ]
+  meetup-spawns: [
+  [300.5, 5, 129.5],
+  [317.5, 5, 146.5],
+  [334.5, 5, 129.5],
+  [317.5, 5, 112.5]
+  ]
+
+Moonbase9:
+  border: 50
+  spawnpoints: [
+  [232.5, 101, -55.5],
+  [137.5, 101, -42.5],
+  [157.5, 100, -199.5],
+  [134.5, 98, -248.5],
+  [205.5, 98, -289.5],
+  [336.5, 101, -306.5],
+  [386.5, 99, -249.5],
+  [360.5, 99, -181.5],
+  [379.5, 101, -33.5],
+  [368.5, 99, -108.5],
+  [327.5, 104, -37.5],
+  [62.5, 98, -160.5]
+  ]
+  meetup-spawns: [
+  [256.5, 98, -122.5],
+  [288.5, 98, -154.5],
+  [256.5, 98, 186.5],
+  [224.5, 98, -154.5]
+  ]
+...
