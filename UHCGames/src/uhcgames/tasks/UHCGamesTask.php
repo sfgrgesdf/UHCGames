@@ -170,9 +170,10 @@ class UHCGamesTask extends Task{
 		$this->shutdownTimer--;
 
 		if($this->shutdownTimer === 0){
-			/*foreach($this->server->getOnlinePlayers() as $p){
-				$p->transfer();
-			}*/
+			foreach($this->server->getOnlinePlayers() as $p){
+				$config = $this->plugin->getConfig();
+				$p->transfer((string) $config->get("server-ip"), (int) $config->get("server-port"));
+			}
 			$this->plugin->getServer()->shutdown();
 		}elseif($this->shutdownTimer === 4){
 			if(count($this->plugin->gamePlayers) === 1){
