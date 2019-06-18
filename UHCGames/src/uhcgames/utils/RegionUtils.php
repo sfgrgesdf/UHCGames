@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace adrenaline\utils;
+namespace uhcgames\utils;
 
 use pocketmine\world\World;
 

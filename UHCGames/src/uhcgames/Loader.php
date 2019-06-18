@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace uhcgames;
 
-use adrenaline\utils\RegionUtils;
+use uhcgames\utils\RegionUtils;
 use pocketmine\block\Block;
 use pocketmine\item\ItemFactory;
 use pocketmine\item\ItemIds;
